@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "jaycverg",
     "description": "",
-    "home_page_url": "https://jayrome.github.io",
-    "feed_url": "https://jayrome.github.io/feed.json",
+    "home_page_url": "https://jaycverg.github.io",
+    "feed_url": "https://jaycverg.github.io/feed.json",
     "user_comment": "",
     "author": {
         "name": "Jayrome"
     },
     "items": [
         {
-            "id": "https://jayrome.github.io/welcome.html",
-            "url": "https://jayrome.github.io/welcome.html",
+            "id": "https://jaycverg.github.io/welcome.html",
+            "url": "https://jaycverg.github.io/welcome.html",
             "title": "Testing Github Pages",
             "summary": "This is my first attempt to create a github page. This will be an ongoing activity. I used Publii to create and publish this page. It is an awesome open source project for static-website CMS. It has a desktop GUI for creating and editing your&hellip;",
             "content_html": "<p>This is my first attempt to create a github page. This will be an ongoing activity.</p>\n<p>I  used <a href=\"https://getpublii.com/\" target=\"_blank\">Publii</a> to create and publish this page. It is an awesome open source project for static-website CMS. It has a desktop GUI for creating and editing your contents and allows you to publish directly to github.</p>\n<p>I am still exploring the options and tools of this awesome desktop tool. I will write more posts soon.</p>\n",
@@ -20,8 +20,8 @@
             },
             "tags": [
             ],
-            "date_published": "2020-07-10T18:01:19+08:00",
-            "date_modified": "2020-07-10T18:01:19+08:00"
+            "date_published": "2020-07-10T18:04:06+08:00",
+            "date_modified": "2020-07-10T18:04:06+08:00"
         }
     ]
 }
