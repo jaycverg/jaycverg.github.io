@@ -248,6 +248,7 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="/blog/">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -470,6 +471,20 @@
       <div class="proj-grid">
         <article class="proj-card reveal">
           <div class="proj-head">
+            <h4>Clip2Remote</h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>A VS Code extension that pastes any file from the macOS clipboard straight into a Remote-SSH terminal — uploading it and inserting the remote path, so terminal AI agents can read it. Published on the Marketplace.</p>
+          <div class="tags" style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag">TypeScript</span><span class="tag">VS Code API</span><span class="tag">JXA</span>
+          </div>
+          <a class="btn btn-ghost" href="https://marketplace.visualstudio.com/items?itemName=jaycverg.clip2remote" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:4px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Marketplace
+          </a>
+        </article>
+        <article class="proj-card reveal">
+          <div class="proj-head">
             <h4>API Gateway & Workday Connector</h4>
             <span class="proj-year">2025</span>
           </div>
@@ -521,10 +536,51 @@
     </div>
   </section>
 
+  <section id="writing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 — Writing</p>
+        <h2>Notes from the workbench</h2>
+        <p>Occasional write-ups on developer tooling, architecture decisions, and the small details that make a workflow feel solid.</p>
+      </div>
+      <div class="proj-grid">
+        <article class="proj-card reveal" style="grid-column:1/-1;flex-direction:row;gap:22px;align-items:flex-start">
+          <img src="assets/clip2remote-icon.png" alt="" width="56" height="56" loading="lazy" style="width:56px;height:56px;border-radius:12px;flex-shrink:0;background:var(--bg);border:1px solid var(--border)">
+          <div style="display:flex;flex-direction:column;gap:12px;flex:1;min-width:0">
+            <div class="proj-head">
+              <h4>I Just Wanted to Paste a File Into My Terminal</h4>
+              <span class="proj-year">Aug 2026</span>
+            </div>
+            <p>A thirty-line zsh script I missed too much turned into a VS Code extension — and why every existing paste extension was running on the wrong computer.</p>
+            <div class="tags" style="display:flex;flex-wrap:wrap;gap:6px">
+              <span class="tag">VS Code</span><span class="tag">macOS</span><span class="tag">SSH</span><span class="tag">Developer tooling</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px">
+              <a class="btn btn-ghost" href="/blog/clip2remote/">
+                Read post
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="https://marketplace.visualstudio.com/items?itemName=jaycverg.clip2remote" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Install the extension
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="reveal" style="margin-top:20px">
+        <a class="btn btn-ghost" href="/blog/">
+          All posts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="container">
       <div class="contact-card reveal">
-        <p class="eyebrow" style="text-align:center">05 — Get in touch</p>
+        <p class="eyebrow" style="text-align:center">06 — Get in touch</p>
         <h2>Let's build something good.</h2>
         <p>Whether it's a project, a question, or just a hello — my inbox is open.</p>
         <div class="contact-links">
