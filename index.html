@@ -211,6 +211,10 @@
   .proj-head h4{margin:0;font-size:16px;font-weight:600}
   .proj-year{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted)}
   .proj-card p{margin:0;color:var(--text-dim);font-size:14px;line-height:1.6}
+  a.repo-card{text-decoration:none;color:inherit}
+  .repo-card h4 svg{width:14px;height:14px;margin-left:4px;vertical-align:-1px;color:var(--text-muted);transition:color .2s ease}
+  .repo-card:hover h4 svg{color:var(--accent)}
+  .repo-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
 
   /* Contact */
   .contact-card{
@@ -248,6 +252,7 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#open-source">Open Source</a>
       <a href="/blog/">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -536,10 +541,156 @@
     </div>
   </section>
 
+  <section id="open-source">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 — Open source</p>
+        <h2>Public repos</h2>
+        <p>Tools, plugins, themes, and demo apps I've published on GitHub, newest first.</p>
+      </div>
+      <div class="proj-grid">
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/clip2remote" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Clip2Remote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Paste any file — zip, video, PDF — from your Mac clipboard into a VS Code terminal over Remote-SSH. Built for Claude Code.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">VS Code</span><span class="tag">Remote-SSH</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/claude-skills" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Claude Skills <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Claude Code commands and a skill for a plan → implement → review workflow.</p>
+          <div class="tags"><span class="tag">Claude Code</span><span class="tag">AI tooling</span><span class="tag">Workflow</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/spoolcast" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Spoolcast <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Standalone CLI that uploads scheduled videos to YouTube channels and Facebook Pages from a per-channel queue, with idempotent per-target tracking. No server, no daemon.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">CLI</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-internal-ai-knowledge-base" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Internal AI Knowledge Base <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Retrieval-augmented Q&amp;A for internal docs: a hand-rolled, unit-tested TF-IDF + cosine retriever composes cited answers, with a real LLM when a key is set and a deterministic extractive fallback offline.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">RAG</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-payment-approval-tracking-system" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Payment Approval Tracking <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Payment approval workflow: amount-based threshold routing to an ordered approval chain, a strict sequential state machine, and an aging/SLA dashboard over a pure, unit-tested routing engine.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-daily-profitability-dashboard" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Daily Profitability Dashboard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Daily P&amp;L for a multi-unit operations business: gross margin, operating profit, profit per unit and per labor hour, with trend, waterfall, and date/unit drill-down.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-finance-month-end-close-tracker" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Month-End Close Tracker <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Finance month-end close: interdependent tasks with owners, dependencies, and due dates, gated by a strict status state machine and a live burndown.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-quality-complaint-investigation-tool" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Quality Complaint Investigation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>QMS demo for product quality complaints end to end: severity triage with SLAs, 5-Whys and fishbone root-cause investigation, CAPA action plans, and AI-drafted customer responses.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/portfolio-marketing-campaign-management-system" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Marketing Campaign Management <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>Marketing operations dashboard: plan campaigns across channels, track spend pacing and budget burn, monitor CTR/CPC/CPA/ROAS, and run team workload on a kanban board.</p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">Prisma</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/iterm-islands-dark-theme" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>iTerm Islands Dark <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2026</span>
+          </div>
+          <p>A dark, low-glare iTerm2 color scheme with a near-black slate background and a soft, muted ANSI palette, inspired by the JetBrains Dark editor theme.</p>
+          <div class="tags"><span class="tag">iTerm2</span><span class="tag">Color scheme</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/intellij-editor-themes" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>IntelliJ Editor Themes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2025</span>
+          </div>
+          <p>Modified dark editor color schemes for IntelliJ.</p>
+          <div class="tags"><span class="tag">IntelliJ</span><span class="tag">Color scheme</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/svn-statusbar-info" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>SVN Status Bar Info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2023</span>
+          </div>
+          <p>An IntelliJ plugin that shows SVN info in the IDE status bar.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">IntelliJ</span><span class="tag">Plugin</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/access-log-counter" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Access Log Counter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2021</span>
+          </div>
+          <p>Apache access-log traffic counter that aggregates hits by log date.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Apache</span><span class="tag">Logs</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/csv2mysql" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>csv2mysql <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2020</span>
+          </div>
+          <p>Parses CSV files into MySQL insert statements.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">CSV</span><span class="tag">MySQL</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/spreaded-theme" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Spreaded <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2020</span>
+          </div>
+          <p>A prompt theme for Oh My Zsh.</p>
+          <div class="tags"><span class="tag">Zsh</span><span class="tag">Oh My Zsh</span></div>
+        </a>
+        <a class="proj-card repo-card reveal" href="https://github.com/jaycverg/express-mock-server" target="_blank" rel="noopener">
+          <div class="proj-head">
+            <h4>Express Mock Server <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></h4>
+            <span class="proj-year">2019</span>
+          </div>
+          <p>A mock API server on Express that serves and generates JSON mock data.</p>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Express</span><span class="tag">Mock API</span></div>
+        </a>
+      </div>
+      <div class="reveal" style="margin-top:20px">
+        <a class="btn btn-ghost" href="https://github.com/jaycverg?tab=repositories" target="_blank" rel="noopener">
+          All repositories
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section id="writing">
     <div class="container">
       <div class="section-head reveal">
-        <p class="eyebrow">05 — Writing</p>
+        <p class="eyebrow">06 — Writing</p>
         <h2>Notes from the workbench</h2>
         <p>Occasional write-ups on developer tooling, architecture decisions, and the small details that make a workflow feel solid.</p>
       </div>
@@ -580,7 +731,7 @@
   <section id="contact">
     <div class="container">
       <div class="contact-card reveal">
-        <p class="eyebrow" style="text-align:center">06 — Get in touch</p>
+        <p class="eyebrow" style="text-align:center">07 — Get in touch</p>
         <h2>Let's build something good.</h2>
         <p>Whether it's a project, a question, or just a hello — my inbox is open.</p>
         <div class="contact-links">
